@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demonstration 3</title>
+        <style>
+            h1,div,input{
+                margin:50px;
+                border:2px solid red;
+                border-radius:15px;
+                
+                width:500px;
+                font-size:25px;
+                background-color: azure;
+                text-align:left;
+                padding-left: 50px;
+           }
+        </style>
+    </head>
+   <body>
+   <div id="mydiv"></div>
+
+   <script>
+    function myprint(mydata){
+        var mydiv=document.getElementById("mydiv");
+        mydiv.innerHTML=mydiv.innerHTML+mydata+"<br>";
+    }
+    myprint("Variables");
+
+    var x=10;
+    myprint(x);
+    var y=20;
+    myprint(y);
+    var z=30;
+    myprint(z);
+    var sum=x+y+z;
+    myprint("Sum="+sum);
+   </script>
+   
+   </body>
+</html>
