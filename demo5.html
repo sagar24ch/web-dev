@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's try</title>
+        <style>
+        div{
+            margin:50px;
+                border:2px solid red;
+                border-radius:15px;
+               
+                width:500px;
+                font-size:25px;
+                background-color: azure;
+                text-align:left;
+                padding-left: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="mydiv">  </div>;
+    <script>
+       function myprint(mydata){
+        var mydiv=document.getElementById("mydiv");
+        mydiv.innerHTML=mydiv.innerHTML+mydata+"<br/>";
+       }
+       myprint("Variable Scop with 'let'");
+       let x=10;
+       function show(){
+        let y=20;
+        if(true){
+            let z=30;
+        }
+        myprint("inside func x="+x);
+        myprint("inside func y="+y);
+        //myprint("inside func z="+z);
+       }
+       show();
+       myprint("outside func x="+x);
+        //myprint("outside func y="+y);
+        //myprint("outside func z="+z);
+    </script>
+    </body>
+</html>
