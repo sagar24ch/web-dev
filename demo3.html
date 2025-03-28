@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demonstration 3</title>
+        <style>
+            h1,div,input{
+                margin:50px;
+                border:2px solid red;
+                border-radius:15px;
+                height:50px;
+                width:500px;
+                font-size:25px;
+                background-color: azure;
+                text-align: center;
+                padding: 15px;
+           }
+        </style>
+    </head>
+   <body>
+        <h1 id="myhello">Hello Guys</h1>
+        <div id="myhai">Hai Guys</div>
+        <input type="button" value="Click to change" onclick="changeText()">
+        <script>
+            function changeText(){
+            var hello=document.getElementById("myhello");
+            console.log(hello);
+            hello.innerHTML="Welcome dude";
+            console.log(hello);
+
+            var hai=document.getElementById("myhai");
+            console.log(hai);
+            hai.innerHTML=hai.innerHTML+ " Welcome";
+            console.log(hai);
+            }
+        </script>
+   </body>
+</html>
