@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lets try</title>
+        <style>
+            div{
+                margin:50px;
+                border:2px solid red;
+                border-radius:15px;
+               height: 500px;
+                width:500px;
+                font-size:25px;
+                background-color: azure;
+                text-align:left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv"> </div>
+        <script>
+            function myprint(mydata){
+                var mydiv=document.getElementById("mydiv");
+                mydiv.innerHTML=mydiv.innerHTML+mydata+"<br/>";
+            }
+            myprint(" hello mrt sagar");
+            var day=new Date().getDay();
+            switch(day){
+                case 0:myprint("sunday");
+                break;
+                case 1:myprint("monday");
+                break;
+                case 2:myprint("tuesday");
+                break;
+                case 3:myprint("wednesday");
+                break;
+                case 4:myprint("thursday");
+                break;
+                case 5:myprint("friday");
+                break;
+                case 6:myprint("saturday");
+                break;
+                default:myprint("invalid");
+            }
+            
+        </script>
+        
+    </body>
+</html>
