@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lets try</title>
+        <style>
+            div{
+                margin:50px;
+                border:2px solid red;
+                border-radius:15px;
+                
+                width:500px;
+                font-size:25px;
+                background-color: azure;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="mydiv">hello welcome to coursecube<br></div>
+        <script>
+            function myprint(mydata){
+                var mydiv=document.getElementById("mydiv");
+                mydiv.innerHTML=mydiv.innerHTML+mydata+"<br/>";
+            }
+            myprint("hey sagar");
+            var arr=[12,23,34];
+            myprint(arr);
+            myprint(typeof arr);
+
+            for(var i=0;i<=arr.length;i++){
+                myprint(arr[i]);
+            }
+            var arr=["sagar","sumit","amit"];
+            myprint(arr);
+            for(i in arr){
+                myprint(arr[i]);
+            }
+
+            var arr=new Array(34,56,"k",88,8);
+            for(var i=0;i<=arr.length;i++){
+                myprint(arr[i]);
+            }
+            var arr=new Array(5);
+            myprint(arr);
+            myprint(arr.length);
+            arr[7]=89;
+            for(var i=0;i<=arr.length;i++){
+                myprint(arr[i]);
+            }
+            for(i in arr)
+            {
+                myprint(arr[i]);
+            }
+        </script>
+        
+    </body>
+</html>
