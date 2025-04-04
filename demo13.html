@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>                     <!--Iterator-->
+<html>
+    <head>
+        <title>Built-in Objects</title>
+        <style>
+            div{
+                border: 2px solid black;
+                font-size: 25px;
+                text-align: center;
+                width: 500px;
+                border-radius: 15px;
+                background-color: rgb(222, 222, 121);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv"></div>
+        <Script>
+            function print(mydata){
+                var mydiv=document.getElementById("mydiv");
+                mydiv.innerHTML=mydiv.innerHTML+mydata+"<br>";
+            }
+            print("hey lets start");
+            var arr1=["angular","react","nodejs","expressJs"];
+            
+            var iterator= arr1.keys();
+            for(let myindex of iterator){
+                print(myindex);
+                console.log(myindex);
+            }
+            print("-----------------------")
+            var iterator= arr1.values();
+            for(let myvalues of iterator){
+                print(myvalues);
+                console.log(myvalues);
+            }
+            print("------------------------");
+            var iterator=arr1.entries();
+            for(let myenteries of iterator){
+                print(myenteries);
+                console.log(myenteries);
+            }
+
+        </Script>
+    </body>
+</html>
