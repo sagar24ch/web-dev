@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>                     <!--Higher Order Function-->
+<html>
+    <head>
+        <title>Built-in Objects</title>
+        <style>
+            div{
+                border: 2px solid black;
+                font-size: 25px;
+                text-align: center;
+                width: 500px;
+                border-radius: 15px;
+                background-color: rgb(222, 222, 121);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv"></div>
+        <Script>
+            function print(mydata){
+                var mydiv=document.getElementById("mydiv");
+                mydiv.innerHTML=mydiv.innerHTML+mydata+"<br>";
+            }
+           var arr=["Angular","React","NodeJs","ExpressJs","MongoDb"];
+           print(arr);
+           for(var myindex in arr){
+            print((index+"     "+arr[index]));
+           }
+
+           function showArr1(values,index){
+                print(index+"         "+values);
+           }
+           function showArr2(values,index){
+            if(index%2==0){
+                print(index+"         "+Values);
+            }
+           }
+           //to call these funtions there is a higher order funtion "forEach()"
+           //which takes funtion as parameter.
+           arr.forEach(showArr1);
+           
+           arr.forEach(showArr2);
+
+        </Script>
+    </body>
+</html>
