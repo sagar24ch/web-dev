@@ -1,0 +1,40 @@
+<!DOCTYPE html>                                     <!--map() function-->
+<html>
+    <head>
+        <title>Built-in Objects</title>
+        <style>
+            div{
+                border: 2px solid black;
+                font-size: 25px;
+                text-align: center;
+                width: 500px;
+                border-radius: 15px;
+                background-color: rgb(222, 222, 121);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv"></div>
+        <Script>
+            function print(mydata){
+                var mydiv=document.getElementById("mydiv");
+                mydiv.innerHTML=mydiv.innerHTML+mydata+"<br>";
+            }
+            var numArr=[1,2,3,4,5,6];
+             var tArr=numArr.map(a=>a+1);
+            
+                print(tArr);
+            function square(a){
+                return a*a;
+            }
+            var arr=numArr.map(square);
+            print(arr);
+            
+            function cube(a){
+                return a*a*a;
+                }
+                var arr=numArr.map(cube);
+                print(arr);
+        </Script>
+        </body>
+</html>        
